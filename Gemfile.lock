@@ -69,6 +69,7 @@ GEM
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     bcrypt (3.1.18)
+    blueprinter (0.25.3)
     bootsnap (1.13.0)
       msgpack (~> 1.2)
     builder (3.2.4)
@@ -100,6 +101,9 @@ GEM
     dry-logic (1.2.0)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.5, >= 0.5)
+    dry-monads (1.4.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.7)
     dry-rails (0.5.0)
       dry-schema (~> 1.7)
       dry-system (~> 0.23, >= 0.23)
@@ -294,10 +298,12 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  blueprinter
   bootsnap
   debug
   devise (~> 4.8)
   dry-initializer
+  dry-monads
   dry-rails
   dry-validation
   factory_bot_rails
