@@ -1,24 +1,9 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Использовал gem'ы:
+dry-validation
+mutations
+blueprinter
+По части моделей все просто, user и operation.
+Доходы и расходы пишутся все в одну таблицу.
+Чтобы сделать отчет делается один SQL запрос c оконной функцией по подзапросу.
+В подзапросе объединяются доходы и расходы.
+В результате есть поле reminder которые указывает баланс после текущей операции.
