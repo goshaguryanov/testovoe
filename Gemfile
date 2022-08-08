@@ -51,4 +51,7 @@ group :test do
 end
 
 gem "devise", "~> 4.8"
-gem 'mutations'
+gem "mutations"
+gem "dry-rails"
+gem "dry-initializer"
+gem "dry-validation"
